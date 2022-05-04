@@ -2,24 +2,27 @@ int CanvasSz = 1000;
 Network net;
 PFont fonttype;
 
+int loop;
+
 void settings() {
   size(CanvasSz, CanvasSz);
 }
 
 void setup() {
+  loop = 0;
   fonttype = createFont("Arial",16,true);
-  frameRate(14);
+  frameRate(10);
 }
 
 void draw() {
   clear();
+  loop = loop + 1;
   
-  int nd = floor(mouseX / 3) + 1;
-  int ru = 400;
-  int ml = floor(mouseY / 1) + 1;
-  int dp = 100;
+  int nd = loop;
+  int ru = 450;
+  int ml = 2;
+  int dp = loop;
   int th = 0;
-  
   
   textFont(fonttype,16); 
   fill(255);

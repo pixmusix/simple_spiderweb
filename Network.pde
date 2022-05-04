@@ -22,7 +22,7 @@ class Network {
     //Draw Network
     make();
     drawnodes();
-    gengraph(0);
+    gengraph(depth);
     drawlinks();
   }
 
@@ -38,12 +38,23 @@ class Network {
   
   int gengraph(int mark) {
     //Create connection between the nodes recursively
+    int last = mark % nodes.size() ;
+    int next = (mark * multiplier) % nodes.size() ;
+    links.add(new Link(nodes.get(last), nodes.get(next)));
+    if (mark <= 0) {
+      return next;
+    }
+    return gengraph(mark - 1);
+  }
+  
+  int gengraph_continuous(int mark) {
+    //Create connection between the nodes recursively
     int next = (mark + multiplier) % nodes.size() ;
     links.add(new Link(nodes.get(mark), nodes.get(next)));
     if (links.size() > depth) {
       return next;
     }
-    return gengraph(next);
+    return gengraph_continuous(next);
   }
   
   void drawnodes() {
