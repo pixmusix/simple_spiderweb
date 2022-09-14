@@ -2,27 +2,27 @@ int CanvasSz = 1000;
 Network net;
 PFont fonttype;
 
-int loop;
+int lp;
 
 void settings() {
   size(CanvasSz, CanvasSz);
 }
 
 void setup() {
-  loop = 0;
+  lp = 0;
   fonttype = createFont("Arial",16,true);
   frameRate(10);
 }
 
 void draw() {
   clear();
-  loop = loop + 1;
+  lp = lp + 1;
   
-  int nd = loop;
-  int ru = 450;
-  int ml = 2;
-  int dp = loop;
-  int th = 0;
+  int nd = lp; //NetworkSize
+  int ru = 450; //Radius
+  int ml = 2; //Multiplier
+  int dp = lp; //Depth
+  int th = 0; //Rotation
   
   textFont(fonttype,16); 
   fill(255);
