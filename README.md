@@ -52,6 +52,12 @@ int ru = my_cos_func(lp, 450); //Radius
 ![imc](example_imgs/c.png)
 ![imd](example_imgs/d.png)
 
+## Acknowledgments
+
+As best as I can tell this is [The Original Paper by Simon Plouffe](http://xahlee.info/SpecialPlaneCurves_dir/Cardioid_dir/_p/LightsRaysReflections.pdf). I discovered this phenomenon in [This Video by Mathologer](https://www.youtube.com/watch?v=qhbuKbxJsk8s). There Mathologer links [Other Fabulous Visulisation by Mathias Lengler](https://lengler.dev/TimesTableWebGL/).
+Lastly, I wanted to share [This Beautiful 2005 installation by Grace Weir](http://www.graceweir.com/page31/page31.html).
+
+
 ## License and Contribution
 
 MIT License Applies.
