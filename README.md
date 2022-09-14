@@ -14,7 +14,7 @@ A short processing sketch for modulo arithmetic visualisation.
 Below is the main guts of the code.
 On each loop 5 variables generate a new network.
 Modifying these variables each pass allows you to change how the visualisation evolves over time.
-Notice, in this simple example, we increment the int lp to evolve the sketch each pass.
+Notice here we increment the int lp to evolve the sketch each pass.
 
 ```java
   lp = lp + 1;
