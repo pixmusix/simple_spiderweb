@@ -3,7 +3,7 @@ A short processing sketch for modulo arithmetic visualisation.
 
 ## QuickStart
 
-1. [Download Processing form the Processing Foundation](https://processing.org/)
+1. [Download Processing from the Processing Foundation](https://processing.org/)
 2. Open Main.pde from within Processing
 3. Click Run.
 
